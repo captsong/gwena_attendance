@@ -50,9 +50,8 @@
                 <input type="texts" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp" value=<?php echo $recordDetails['contactNumber']?>>
                 <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
             </div>
-            <div class="d-grid gap-2">
-                <button type="submit" name="submit" class="btn btn-success btn-block">Save Changes</button>
-            </div>
+            <a href="viewrecords.php" class="btn btn-default">Back to List</a>
+            <button type="submit" name="submit" class="btn btn-success btn-block">Save Changes</button>
         </form>
     </div>
 
