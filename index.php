@@ -10,7 +10,7 @@
     ?>
     <h1 class="text-center">Registration for IT Conference</h1>
     <div class="container" id="regFormContainer">
-        <form method="post" action="success.php">
+        <form method="post" action="success.php" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="firstName" class="form-label">First Name</label>
                 <input type="text" class="form-control" id="firstName" name="firstName" required>
@@ -40,6 +40,12 @@
                 <label for="phone" class="form-label">Contact Number</label>
                 <input type="texts" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp">
                 <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
+            </div>
+            <div class="custom-file mb-3">
+                <label class="form-label" for="avatar">Upload an Avatar (Optional)</label>
+                <input type="file" class="form-control" id="avatar" name="avatar" accept="image/*">
+                <!-- <label class="form-label" for="avatar">Choose File</label> -->
+
             </div>
             <div class="d-grid gap-2">
                 <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>

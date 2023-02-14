@@ -1,6 +1,6 @@
-        
-        <div id="footer">
-            <?php echo "<p>Copyright &copy; 1999-" . date("Y") . " PHP Masterclass </p>" ?>
+
+        <div id="footer" class="p-3 bg-primary text-white fixed-bottom">
+            <?php echo "<p class='text-center'>Copyright &copy; IT Conference Attendance System " . date("Y") ?>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
