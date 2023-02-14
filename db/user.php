@@ -20,7 +20,7 @@
 
                     //bind parameters to sql statement
                     $statement->bindparam(':username', $username);
-                    $statement->bindparam(':password', $password);
+                    $statement->bindparam(':password', $new_password);
                     
                     //execute the sql command 
                     $statement -> execute();
@@ -48,7 +48,7 @@
         }
         public function getUserByUsername($username){
             try{
-                $sql = "SELECT COUNT(*) AS NUM FROM users WHERE username = :username";
+                $sql = "SELECT COUNT(*) AS num FROM users WHERE username = :username";
                 $statement = $this->db->prepare($sql);
                 $statement->bindparam(':username', $username);
 
